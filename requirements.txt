@@ -1,0 +1,1 @@
+https://github.com/tchellomello/python-arlo/tarball/3e358d4bf448c276f471f84a0ed131c80cd88678#egg=pyarlo-0.0.6
