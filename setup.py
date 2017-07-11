@@ -23,7 +23,7 @@ setup(
     name='arlo_tools',
     packages=['bin'],
     version='0.0.1',
-    description='Collection of out-of-the-box utility scripts for interfacing with Arlo Cameras.',
+    description='Collection of out-of-the-box utility scripts for interfacing with Arlo cameras.',
     author='Chad Dotson',
     author_email='chad@cdotson.com',
     url='https://github.com/chaddotson/arlo_tools',
