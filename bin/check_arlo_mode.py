@@ -56,7 +56,7 @@ def main():
     recipients = config.get('email', 'recipients')
 
     if ',' in recipients:
-        recipients = map(str.strip, recipients.split(','))
+        recipients = [r for r in map(str.strip, recipients.split(','))]
     else:
         recipients = [recipients]
 
@@ -147,7 +147,7 @@ def check_station_mode(smtp_manager, found_entry, station_mode, originator, noti
             msg['To'] = ", ".join(notification_recipients)
             msg['Subject'] = content
 
-            logger.info("sending messages to %s", notification_recipients)
+            logger.info("sending messages to %s", notification_recipients )
 
             smtp.sendmail(msg['From'], notification_recipients, msg.as_string())
             logger.info('Notification sent')
